@@ -10,7 +10,7 @@
 ## The Problem
 Using Java, find all of the English words in a given String.  For example, if you are given the word WORKING, you can easily find WORK and KING, but ROW, RING and KNOW are also in there.  You have access to a utility class called Dictionary, which has one method, isEnglishWord(String word).  Dictionary.isEnglishWord(String word) connects to a (mocked) online dictionary and returns Boolean true if the String passed to it is an English word, return false otherwise.
 
-###Instructions
+### Instructions
 1.	Use Maven to create a project to answer this problem.
 2.	You will need to create the Dictionary class.
 3.	You will need to mock Dictionary.isEnglishWord(String word) for your solution and tests.
