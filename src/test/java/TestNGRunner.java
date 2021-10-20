@@ -3,17 +3,17 @@ import org.testng.TestNG;
 import java.util.ArrayList;
 import java.util.List;
 
-public class TestRunner {
+public class TestNGRunner {
     public static void main(String[] args) {
-        TestNG objtTng = new TestNG();
+        TestNG objtTNG = new TestNG();
 
-        List<String> suites = new ArrayList<String>();
+        List<String> suites = new ArrayList<>();
 
         suites.add("src/TestValidEnglishWords.xml");
         suites.add("src/TestWordsInWord.xml");
 
-        objtTng.setTestSuites(suites);
+        objtTNG.setTestSuites(suites);
 
-        objtTng.run();
+        objtTNG.run();
     }
 }
