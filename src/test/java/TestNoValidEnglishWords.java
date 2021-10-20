@@ -15,10 +15,10 @@ public class TestNoValidEnglishWords {
 
     @DataProvider
     public Object[][] noValidWordsDP() {
-        return new Object[][] {
-                new Object[] {"sudoku", false},
-                new Object[] {"teriyaki", false},
-                new Object[] {"bitcoin", false},
+        return new Object[][]{
+                new Object[]{"sudoku", false},
+                new Object[]{"teriyaki", false},
+                new Object[]{"bitcoin", false},
         };
     }
 }

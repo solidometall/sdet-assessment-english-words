@@ -3,19 +3,19 @@
 <suite name="TestWordsInWord.xml">
     <test name="TestWordsInWord">
         <classes>
-            <class name="TestWordsInWord" />
+            <class name="TestWordsInWord"/>
         </classes>
     </test>
 
     <test name="TestEmptyWordInWord">
         <classes>
-            <class name="TestEmptyWordInWord" />
+            <class name="TestEmptyWordInWord"/>
         </classes>
     </test>
 
     <test name="TestSingleWordInWord">
         <classes>
-            <class name="TestSingleWordInWord" />
+            <class name="TestSingleWordInWord"/>
         </classes>
     </test>
 </suite>

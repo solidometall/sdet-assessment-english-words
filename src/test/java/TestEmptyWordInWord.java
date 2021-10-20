@@ -15,15 +15,15 @@ public class TestEmptyWordInWord {
         Dictionary dictionary = new Dictionary();
         WordProcessor processor = new WordProcessor(dictionary);
 
-        List<String> wordList = processor.processSubwords(word);
+        List<String> wordList = processor.processSubWords(word);
         assertThat(wordList, hasSize(equalTo(quantity)));
     }
 
     @DataProvider
     public Object[][] emptyWordInWordDP() {
-        return new Object[][] {
-                new Object[] {"", 0},
-                new Object[] {"  ", 0},
+        return new Object[][]{
+                new Object[]{"", 0},
+                new Object[]{"  ", 0},
         };
     }
 }

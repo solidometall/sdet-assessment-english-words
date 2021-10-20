@@ -30,8 +30,7 @@ public class Dictionary implements IDictionary {
 
         try {
             word_list = Files.readAllLines(Paths.get(file_path), StandardCharsets.UTF_8);
-        }
-        catch (IOException e) {
+        } catch (IOException e) {
             e.printStackTrace();
         }
 

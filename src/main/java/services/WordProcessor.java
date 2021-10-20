@@ -11,7 +11,7 @@ public class WordProcessor implements IWordProcessor {
     }
 
     @Override
-    public List<String> processSubwords(String word) {
+    public List<String> processSubWords(String word) {
         List<String> dictionaryWordList = this.dict.getWordList();
         List<String> processedWords = new ArrayList<>();
 
@@ -24,7 +24,7 @@ public class WordProcessor implements IWordProcessor {
                 String dictWordChar = String.valueOf(dictWord.charAt(wordLetterPos));
 
                 if (wordCopy.length() > 0 && wordCopy.contains(dictWordChar))
-                    wordCopy = wordCopy.replace(dictWordChar,"");
+                    wordCopy = wordCopy.replace(dictWordChar, "");
                 else
                     break;
 

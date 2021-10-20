@@ -15,17 +15,17 @@ public class TestSingleWordInWord {
         Dictionary dictionary = new Dictionary();
         WordProcessor processor = new WordProcessor(dictionary);
 
-        List<String> wordList = processor.processSubwords(word);
+        List<String> wordList = processor.processSubWords(word);
         assertThat(wordList, hasSize(equalTo(quantity)));
     }
 
     @DataProvider
     public Object[][] singleWordsInWordDP() {
-        return new Object[][] {
-                new Object[] {"at", 1},
-                new Object[] {"do", 1},
-                new Object[] {"tv", 1},
-                new Object[] {"or", 1},
+        return new Object[][]{
+                new Object[]{"at", 1},
+                new Object[]{"do", 1},
+                new Object[]{"tv", 1},
+                new Object[]{"or", 1},
         };
     }
 }
