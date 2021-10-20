@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="TestWordsInWord.xml">
-    <test name="TestWordsInWord">
+<suite name="TestEnglishWords.xml">
+    <test name="TestEnglishWords">
         <classes>
-            <class name="TestWordsInWord"/>
+            <class name="TestEnglishWords"/>
         </classes>
     </test>
 </suite>

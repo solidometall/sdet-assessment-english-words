@@ -9,7 +9,7 @@ public class TestNGRunner {
 
         List<String> suites = new ArrayList<>();
 
-        suites.add("src/TestValidEnglishWords.xml");
+        suites.add("src/TestEnglishWords.xml");
         suites.add("src/TestWordsInWord.xml");
 
         test.setTestSuites(suites);

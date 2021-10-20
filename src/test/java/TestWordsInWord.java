@@ -19,6 +19,24 @@ public class TestWordsInWord {
         assertThat(wordList, hasSize(equalTo(quantity)));
     }
 
+    @Test(dataProvider = "singleWordsInWordDP")
+    public void testSingleWord(String word, int quantity) {
+        Dictionary dictionary = new Dictionary();
+        WordProcessor processor = new WordProcessor(dictionary);
+
+        List<String> wordList = processor.processSubWords(word);
+        assertThat(wordList, hasSize(equalTo(quantity)));
+    }
+
+    @Test(dataProvider = "emptyWordInWordDP")
+    public void testEmptyWord(String word, int quantity) {
+        Dictionary dictionary = new Dictionary();
+        WordProcessor processor = new WordProcessor(dictionary);
+
+        List<String> wordList = processor.processSubWords(word);
+        assertThat(wordList, hasSize(equalTo(quantity)));
+    }
+
     @DataProvider
     public Object[][] wordsInWordDP() {
         return new Object[][]{
@@ -26,6 +44,24 @@ public class TestWordsInWord {
                 new Object[]{"art", 2},
                 new Object[]{"available", 9},
                 new Object[]{"working", 21},
+        };
+    }
+
+    @DataProvider
+    public Object[][] singleWordsInWordDP() {
+        return new Object[][]{
+                new Object[]{"at", 1},
+                new Object[]{"do", 1},
+                new Object[]{"tv", 1},
+                new Object[]{"or", 1},
+        };
+    }
+
+    @DataProvider
+    public Object[][] emptyWordInWordDP() {
+        return new Object[][]{
+                new Object[]{"", 0},
+                new Object[]{"  ", 0},
         };
     }
 }
