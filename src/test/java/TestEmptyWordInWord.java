@@ -10,7 +10,7 @@ import static org.hamcrest.Matchers.hasSize;
 import static org.junit.Assert.assertThat;
 
 public class TestEmptyWordInWord {
-    @Test(dataProvider = "singleWordsInWordDP")
+    @Test(dataProvider = "emptyWordInWordDP")
     public void testEmptyWord(String word, int quantity) {
         Dictionary dictionary = new Dictionary();
         WordProcessor processor = new WordProcessor(dictionary);
@@ -20,9 +20,10 @@ public class TestEmptyWordInWord {
     }
 
     @DataProvider
-    public Object[][] singleWordsInWordDP() {
+    public Object[][] emptyWordInWordDP() {
         return new Object[][] {
                 new Object[] {"", 0},
+                new Object[] {"  ", 0},
         };
     }
 }

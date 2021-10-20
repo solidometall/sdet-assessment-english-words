@@ -38,4 +38,3 @@ public class Dictionary implements IDictionary {
         return word_list;
     }
 }
-
