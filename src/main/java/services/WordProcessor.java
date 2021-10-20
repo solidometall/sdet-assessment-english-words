@@ -3,14 +3,13 @@ package services;
 import java.util.ArrayList;
 import java.util.List;
 
-public class WordProcessor implements IWordProcessor {
+public class WordProcessor {
     private final Dictionary dict;
 
     public WordProcessor(Dictionary dict) {
         this.dict = dict;
     }
 
-    @Override
     public List<String> processSubWords(String word) {
         List<String> dictionaryWordList = this.dict.getWordList();
         List<String> processedWords = new ArrayList<>();
