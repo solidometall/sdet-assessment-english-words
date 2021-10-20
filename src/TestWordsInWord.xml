@@ -6,4 +6,16 @@
             <class name="TestWordsInWord" />
         </classes>
     </test>
+
+    <test name="TestEmptyWordInWord">
+        <classes>
+            <class name="TestEmptyWordInWord" />
+        </classes>
+    </test>
+
+    <test name="TestSingleWordInWord">
+        <classes>
+            <class name="TestSingleWordInWord" />
+        </classes>
+    </test>
 </suite>

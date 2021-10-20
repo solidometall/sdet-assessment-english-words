@@ -2,8 +2,7 @@ import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 import services.Dictionary;
 
-
-import static org.hamcrest.CoreMatchers.equalTo;
+import static org.hamcrest.CoreMatchers.is;
 import static org.junit.Assert.assertThat;
 
 public class TestValidEnglishWords {
@@ -11,7 +10,7 @@ public class TestValidEnglishWords {
     public void testValidWords(String word, boolean status) {
         Dictionary dictionary = new Dictionary();
 
-        assertThat(dictionary.isEnglishWord(word), equalTo(status));
+        assertThat(dictionary.isEnglishWord(word), is(status));
     }
 
     @DataProvider
