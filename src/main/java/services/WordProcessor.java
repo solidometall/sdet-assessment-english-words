@@ -15,11 +15,11 @@ public class WordProcessor implements IWordProcessor {
         List<String> dictionaryWordList = this.dict.getWordList();
         List<String> processedWords = new ArrayList<>();
 
-        // loop each word in the dictionary
+        // loop each word from the dictionary
         for (String dictWord : dictionaryWordList) {
             String wordCopy = String.valueOf(word);
 
-            // evaluate each character of the word in the dictionary
+            // evaluate each character of the dictionary word
             for (int wordLetterPos = 0; wordLetterPos < dictWord.length(); wordLetterPos++) {
                 String dictWordChar = String.valueOf(dictWord.charAt(wordLetterPos));
 
