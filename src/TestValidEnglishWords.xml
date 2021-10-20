@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="TestEnglishWords.xml">
+    <test name="TestValidEnglishWords">
+        <classes>
+            <class name="TestValidEnglishWords" />
+        </classes>
+    </test>
+
+    <test name="TestNoValidEnglishWords">
+        <classes>
+            <class name="TestNoValidEnglishWords" />
+        </classes>
+    </test>
+</suite>
