@@ -23,7 +23,7 @@ public class WordProcessor {
                 String dictWordChar = String.valueOf(dictWord.charAt(wordLetterPos));
 
                 if (wordCopy.length() > 0 && wordCopy.contains(dictWordChar))
-                    wordCopy = wordCopy.replace(dictWordChar, "");
+                    wordCopy = wordCopy.replaceFirst(dictWordChar, "");
                 else
                     break;
 

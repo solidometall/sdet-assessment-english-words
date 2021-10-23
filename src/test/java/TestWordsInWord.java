@@ -40,10 +40,10 @@ public class TestWordsInWord {
     @DataProvider
     public Object[][] wordsInWordDP() {
         return new Object[][]{
-                new Object[]{"alternative", 44},
+                new Object[]{"alternative", 66},
                 new Object[]{"art", 2},
-                new Object[]{"available", 9},
-                new Object[]{"working", 21},
+                new Object[]{"available", 14},
+                new Object[]{"working", 20},
         };
     }
 
